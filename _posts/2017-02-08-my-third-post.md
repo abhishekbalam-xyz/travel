@@ -4,6 +4,8 @@ subtitle: Sample Subtitle
 layout: post
 img: assets/img/work3.jpg
 permalink: /:title/
+location: Rajmachi
+tag: trek
 ---
 
 

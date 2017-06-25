@@ -1,16 +1,13 @@
 
 title: Travel Blog
-# email: your-email@domain.com
+
 description: > # this means to ignore newlines until "baseurl:"
   A blog of all my treks and travels.
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "" 
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://travel.abhishekbalam.xyz"
 
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
 markdown: kramdown
-theme: minima
+
+api_key: AIzaSyAWh7E-G5TGau8UPzE2fK0Ld60cDh_tVBI
