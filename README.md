@@ -1,4 +1,4 @@
-# Jekyll Port of Magenetic theme for my personal website.
+# Jekyll Port of Magnetic theme for my personal website.
 Magnetic is a one page template with modern look and feel in mind based on the [original html5 theme](http://pixelhint.com/magnetic-free-html5-responsive-photography-website-template/).
 I have used this html5 theme to make my own jekyll theme for my blog.
 
