@@ -8,7 +8,7 @@ http://travel.abhishekbalam.xyz
 
 ## License
 
-This theme is released under The MIT License (MIT).
+This theme is released under the MIT License (MIT).
 
 ## Acknowledgements
 
