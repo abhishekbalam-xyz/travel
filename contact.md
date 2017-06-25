@@ -1,4 +1,5 @@
 ---
 layout: contact
-map:true
+map: true
+permalink: /contact/
 ---
