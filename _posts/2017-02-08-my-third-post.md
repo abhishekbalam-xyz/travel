@@ -6,6 +6,7 @@ img: assets/img/work3.jpg
 permalink: /:title/
 location: Rajmachi
 tag: trek
+published: false
 ---
 
 

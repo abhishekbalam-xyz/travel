@@ -6,6 +6,7 @@ img: assets/img/work2.jpg
 permalink: /:title/
 location: Visapur Fort
 tag: trek
+published: false
 ---
 
 
