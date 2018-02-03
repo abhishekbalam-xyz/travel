@@ -37,9 +37,17 @@ function initialize() {
     geocoder = new google.maps.Geocoder();
 
     for (i = 0; i < locations.length; i++) {
-
-
-        geocodeAddress(locations, i);
+    
+        if(i>10){
+            setTimeout(function () {
+                console.log("wait");
+                geocodeAddress(locations, i);
+            },1000);
+        }
+        else{
+            geocodeAddress(locations, i);
+        }
+        // console.log(locations[i].post[i].location);
     }
 }
 google.maps.event.addDomListener(window, "load", initialize);

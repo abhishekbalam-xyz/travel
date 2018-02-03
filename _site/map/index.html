@@ -30,7 +30,7 @@
 			<ul>
 				<li><a href="/">Home</a></li>
 				<li><a href="/blog/">Blog</a></li>
-				<li><a href="#">Targets</a></li>
+				<!-- <li><a href="#">Targets</a></li> -->
 				<li><a href="/map/">Map</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
@@ -51,41 +51,113 @@
     
         var post_array=[]
 
-        post_array.push("01 Mar 2017");
-        post_array.push("Lohagad Fort");
-        post_array.push("/my-sixth-post/");
-        post_array.push("trek");
-        locations.push(post_array)
-    
-        var post_array=[]
-
-        post_array.push("27 Feb 2017");
-        post_array.push("Hampta Pass");
-        post_array.push("/my-fifth-post/");
-        post_array.push("trek");
-        locations.push(post_array)
-    
-        var post_array=[]
-
-        post_array.push("10 Feb 2017");
-        post_array.push("Triund");
-        post_array.push("/my-fourth-post/");
-        post_array.push("trek");
-        locations.push(post_array)
-    
-        var post_array=[]
-
-        post_array.push("08 Feb 2017");
-        post_array.push("Rajmachi");
-        post_array.push("/my-third-post/");
+        post_array.push("16 Jan 2017");
+        post_array.push("Sanjay Gandhi National Park");
+        post_array.push("/sanjay-gandhi-national-park/");
         post_array.push("trek");
         locations.push(post_array)
     
         var post_array=[]
 
         post_array.push("15 Jan 2017");
+        post_array.push("Srisailam");
+        post_array.push("/srisailam/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("14 Jan 2017");
+        post_array.push("Ratangad Fort");
+        post_array.push("/ratangad-fort/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("13 Jan 2017");
+        post_array.push("Amritsar");
+        post_array.push("/amritsar/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("12 Jan 2017");
+        post_array.push("Haridwar");
+        post_array.push("/haridwar/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("11 Jan 2017");
+        post_array.push("Rishikesh");
+        post_array.push("/rishikesh/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("10 Jan 2017");
+        post_array.push("McLeod Ganj");
+        post_array.push("/mcleod-ganj/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("09 Jan 2017");
+        post_array.push("Sarnath");
+        post_array.push("/Sarnath/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("08 Jan 2017");
+        post_array.push("Varanasi");
+        post_array.push("/varanasi/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("07 Jan 2017");
+        post_array.push("Lohagad Fort");
+        post_array.push("/lohagadh-fort/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("06 Jan 2017");
+        post_array.push("Hyderabad");
+        post_array.push("/hyderabad/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("05 Jan 2017");
+        post_array.push("Triund");
+        post_array.push("/triund/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("04 Jan 2017");
+        post_array.push("Prabalgad");
+        post_array.push("/prabalgad/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("03 Jan 2017");
         post_array.push("Visapur Fort");
-        post_array.push("/my-second-post/");
+        post_array.push("/visapur-fort/");
         post_array.push("trek");
         locations.push(post_array)
     
@@ -93,7 +165,15 @@
 
         post_array.push("02 Jan 2017");
         post_array.push("Kalsubai Peak");
-        post_array.push("/my-first-post/");
+        post_array.push("/kalsubai-peak/");
+        post_array.push("trek");
+        locations.push(post_array)
+    
+        var post_array=[]
+
+        post_array.push("01 Jan 2017");
+        post_array.push("Sudhagad Fort");
+        post_array.push("/sudhagad-fort/");
         post_array.push("trek");
         locations.push(post_array)
     
@@ -117,9 +197,17 @@ function initialize() {
     geocoder = new google.maps.Geocoder();
 
     for (i = 0; i < locations.length; i++) {
-
-
-        geocodeAddress(locations, i);
+    
+        if(i>10){
+            setTimeout(function () {
+                console.log("wait");
+                geocodeAddress(locations, i);
+            },1000);
+        }
+        else{
+            geocodeAddress(locations, i);
+        }
+        // console.log(locations[i].post[i].location);
     }
 }
 google.maps.event.addDomListener(window, "load", initialize);
