@@ -1,13 +1,20 @@
+# Site settings
+title:          "Travel"
+description:    "Tales from my time in the outdoors."
+baseurl:        ""
+url:            "https://travel.abhishekbalam.xyz/"
 
-title: Travel Blog
+# Author
+author:
+  name:         Abhishek Balam
+  url:          https://abhishekbalam.xyz
+  email:        abhishekbalam96@gmail.com
 
-description: > # this means to ignore newlines until "baseurl:"
-  A blog of all my treks and travels.
-
-baseurl: "" 
-
-url: "http://travel.abhishekbalam.xyz"
-
+# Build settings
 markdown: kramdown
 
-api_key: AIzaSyAWh7E-G5TGau8UPzE2fK0Ld60cDh_tVBI
+permalink: /:title
+
+# Build settings
+port: 4000
+
